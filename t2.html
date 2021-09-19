@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="aaa"></p>
+<script>
+let a = 9.793;
+document.getElementById("aaa").innerHTML =
+  a.toExponential() + "<br>" + 
+  a.toExponential(2) + "<br>" + 
+  a.toExponential(4) + "<br>" + 
+  a.toExponential(10);
+</script>
+
+
+<p id="bbb"></p>
+
+<script>
+let b = 1.845;
+document.getElementById("bbb").innerHTML = 
+  b.toPrecision() + "<br>" +
+  b.toPrecision(2) + "<br>" +
+  b.toPrecision(4) + "<br>" +
+  b.toPrecision(6);  
+</script>
+
+<p id="demo"></p>
+<script>
+let x = 300;
+document.getElementById("demo").innerHTML =
+  x.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   (100 + 23).toString();
+</script>
+
+
+<p id="ccc"></p>
+<p id="ccc2"></p>
+<p id="ccc3"></p>
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Watermelon"];
+document.getElementById("ccc").innerHTML = fruits.join("-");
+fruits.pop();
+document.getElementById("ccc2").innerHTML = fruits.join(";");
+fruits.push("pear");
+document.getElementById("ccc2").innerHTML = fruits.join("/");
+</script>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="ddd1"></p>
+<p id="ddd2"></p>
+
+<script>
+const animals = ["Dog", "Cat", "Mouse"];
+document.getElementById("ddd1").innerHTML = "Original Array:<br>" + animals;
+
+function myFunction() {
+  animals.splice(3, 0, "Lion", "Wolf");
+  document.getElementById("ddd2").innerHTML = "New Array:<br>" + animals;
+}
+</script>
+
+</body>
+</html>

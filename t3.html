@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p id="demo"></p>
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d.getTime();
+</script>
+
+<p id="aaa"></p>
+<script>
+const a = new Date();
+document.getElementById("aaa").innerHTML = a.getMonth() + 4;
+</script>
+
+<p id="bbb"></p>
+<script>
+const b = new Date();
+document.getElementById("bbb").innerHTML = b.getDate();
+</script>
+
+
+<p id="ccc"></p>
+<script>
+const c = new Date();
+c.setFullYear(2021);
+document.getElementById("demo").innerHTML = c;
+</script>
+
+<p id="ddd"></p>
+<script>
+const dd = new Date();
+dd.setFullYear(2021, 11, 1);
+document.getElementById("demo").innerHTML = dd;
+</script>
+
+<p id="eee"></p>
+
+<script>
+const e = new Date();
+e.setHours(23);
+document.getElementById("demo").innerHTML = e;
+</script>
+
+
+</body>
+</html>
